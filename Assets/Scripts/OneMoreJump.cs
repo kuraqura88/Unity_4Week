@@ -13,7 +13,7 @@ public class JumpBoostObject : MonoBehaviour
             if (playerController != null)
             {
                 playerController.IncreaseRemainingJumps(jumpBoostAmount); // 추가 점프 횟수 증가
-                Destroy(gameObject); // 오브젝트 파괴
+                gameObject.SetActive(false);
             }
         }
     }
